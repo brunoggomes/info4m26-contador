@@ -10,7 +10,8 @@ import { ContadorService } from '../contador-service';
 export class DobraContador {
     readonly #contadorService = inject(ContadorService)
 
-    dobro = computed(() => {
-      return this.#contadorService.contador() * 2
-    })
+    dobro = computed(() => 
+      {
+        return this.#contadorService.contador() * 2
+      })
 }
